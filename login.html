@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login-Smart Travel</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+    body{
+        background-image: url("couple.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #jumbo{
+        background: rgba(1, 15, 27, 0.42);
+    }
+    h3,h2 {
+        color: white;
+    }
+
+    #alert1,#alert2{
+        color: red;
+    }
+
+
+</style>
+
+<script>
+
+function login(){
+    var username=document.getElementById('name').value;
+    var password=document.getElementById('pass').value;
+    if(username==""||password=="") {
+        document.getElementById('alert1').innerHTML='Username is required';
+        document.getElementById('alert2').innerHTML='Password is required';
+        return false;
+    }
+    return true;
+}
+
+
+</script>
+<body>
+
+<div class="nav navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Smart Travel</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="smart%20travel.html">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+        <form action="" class="navbar-form navbar-left">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search this out">
+            </div>
+            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Search</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="register.html" target="_self"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="Login.html" target="_self"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</div><br><br><br>
+<br><br><br><br><br>
+<div class="container">
+    <div class="jumbotron" id="jumbo">
+<form class="form-inline" onsubmit=" return login()" action="smart%20travel.html">
+        <h2>Login</h2>
+        <h3>Username</h3>
+        <input type="text" class="form-control" id="name"><br>
+          <p id="alert1"></p>
+        <h3>Password</h3>
+        <input  type="password" class="form-control" id="pass"><br>
+         <p id="alert2"></p>
+        <input type="submit" value="Login" class="btn btn-lg btn-primary">
+</form>
+    </div>
+</div>
+</body>
+</html>

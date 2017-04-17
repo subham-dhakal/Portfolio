@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airways Reservation</title>
+   <!-- <script type="text/javascript" src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.js"></script>
+    <link href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="bootstrap-4.0.0-alpha.6-dist/jquery-3.1.1.min.js"></script>
+-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        #head{
+            background-image: url("aircraft.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+
+
+
+    </style>
+
+</head>
+        <body>
+        <div class="nav navbar-inverse navbar-fixed-top">
+            <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Smart Travel</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="smart%20travel.html">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+        <form action="" class="navbar-form navbar-left">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search this out">
+            </div>
+            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Search</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="head" class="jumbotron">
+    <h2>Smart Travel</h2>
+    <small><h4>Airways Reservation</h4></small>
+    <br><br><br><br>
+</div>
+
+   <div class="container">
+    <div id="form" class="jumbotron">
+    <div class="form-inline">
+      <div class="radio">
+          <label><input type="radio" name="optradio">One Way </label>
+      </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="radio">
+          <label><input type="radio" name="optradio" >Round Trip</label>
+        </div>
+    </div>
+
+        <form class="form-inline">
+            <div class="form-group">
+                <label>Flying From</label>
+                <span class="glyphicon glyphicon-map-marker"></span><input type="text" class="form-control">
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <form class="form-group">
+            <label>Flying To</label>
+                <span class="glyphicon glyphicon-map-marker"></span><input type="text" class="form-control">
+              </form>
+            <br>
+        </form>
+
+        <form class="form-inline">
+            <div class="form-group">
+                <label>Departing Time</label>
+                <span class="glyphicon glyphicon-calendar"></span><input type="datetime-local" class="form-control">
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="form-group">
+                <label>Returning Time</label>
+                <span class="glyphicon glyphicon-calendar"></span><input type="datetime-local" class="form-control">
+            </div>
+        </form><br>
+        <form class="form-inline">
+            <div class="form-group">
+             <label>Adults</label>
+                <input type="number" class="form-controls">
+            </div>&nbsp;&nbsp;&nbsp
+            <div class="form-group">
+                <label>Children</label>
+                <input type="number" class="form-controls">
+            </div>&nbsp;&nbsp;&nbsp
+            <div class="form-group">
+                <label>Children Age</label>
+                <input type="number" class="form-controls">
+            </div>
+        </form><br>
+        <button class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Compare & Search</button>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>

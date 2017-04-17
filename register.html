@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register-Smart Travel</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+#head{
+    background-color: #efefef;
+}
+    body {
+        background-image: url("family.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #head{
+        background-color: rgba(130, 180, 255,0.36);
+
+    }
+
+
+</style>
+
+<script>
+
+    function check_info() {
+        var first=document.getElementById('first').value;
+        var last=document.getElementById('last').value;
+        var pass=document.getElementById('pass').value;
+        var email=document.getElementById('email').value;
+        var birth=document.getElementById('birth').value;
+        var country=document.getElementById('country').value;
+     if(first==""||last==""||pass==""||email==""||birth==""||country==""){
+         alert("Please Fill All The Fields");
+         return false;
+     }
+     return true;
+    }
+
+</script>
+
+<body>
+
+<div class="nav navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Smart Travel</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="smart%20travel.html">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+        <form action="" class="navbar-form navbar-left">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search this out">
+            </div>
+            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Search</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="register.html" target="_self"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="Login.html" target="_self"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</div>
+<br><br><br>
+
+<div class="container-fluid">
+    <div class="jumbotron" id="head">
+       <h2>Sign Up</h2><br><br>
+    <form class="form-inline" onsubmit="return check_info()" action="login.html">
+        <div class="form-group">
+            <h4>Firstname</h4>
+            <input type="text" class="form-control" id="first">
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="form-group">
+                <h4>Lastname</h4>
+                <input type="text" class="form-control" id="last">
+            </div><br><br>
+        <div class="form-group">
+            <h4>Password</h4>
+            <input type="password" class="form-control" id="pass">
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="form-group">
+            <h4>Birthdate</h4>
+            <input type="date" class="form-control" id="birth">
+        </div><br><br>
+        <div class="form-group">
+            <h4>Email</h4>
+            <input type="email" class="form-control" id="email">
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="form-group">
+            <h4>Country</h4>
+            <input type="text" class="form-control" id="country">
+        </div><br><br><br>
+        <input type="submit" class="btn btn-lg btn-primary" value="Register">
+
+    </form>
+</div>
+</div>
+
+</body>
+</html>

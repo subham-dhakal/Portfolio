@@ -1,0 +1,31 @@
+#road:hover{
+    transform: scale(1.1);
+   transition: transform .2s ease-in;
+}
+
+#air:hover{
+    transform: scale(1.1);
+    transition: transform .2s ease-in;
+}
+
+#rope:hover{
+    transform: scale(1.1);
+    transition: transform .2s ease-in;
+}
+#kalin:hover{
+    transform: scale(1.1);
+    transition: transform .2s ease-in;
+}
+#pathi:hover{
+    transform: scale(1.1);
+    transition: transform .2s ease-in;
+}
+#mana:hover{
+    transform: scale(1.1);
+    transition: transform .2s ease-in;
+}
+
+#tab{
+    background-color: #ccccde;
+}
+

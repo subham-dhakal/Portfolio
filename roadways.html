@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roadway Reservation</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+#head{
+    background-image: url("roadtrip.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+    h3{
+        color: rgba(10,10,9,0.85);
+        font-size: 28px;
+    }
+    h4{
+        color: black;
+        font-size: 22px;
+    }
+    #h2,p{
+        color: white;
+    }
+
+    .btn:hover{
+        transform: scale(1.1);
+        trasition: transform 9s ease-in
+    }
+    #owner,#pass,#online{
+        background-color: #efefef;
+    }
+  
+
+
+
+
+</style>
+
+<body>
+<div class="nav navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Smart Travel</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="smart%20travel.html">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+        <form action="" class="navbar-form navbar-left">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search this out">
+            </div>
+            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Search</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</div><br><br><br>
+<div class="jumbotron" id="head">
+<h2 class="page-header" id="h2">Smart Travel</h2>
+    <p>Roadway Reservation</small></p>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+
+        <div class="jumbotron" id="owner">
+            <h3>Vechicle Owner</h3>
+            <form action="" class="form-inline">
+                <div class="form-group">
+                    <h4>Name</h4>
+                    <input type="text" class="form-control">
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="form-group">
+                    <h4>Vechicle Route</h4>
+                    <input type="text" class="form-control">
+                </div><br>
+                <div class="form-group">
+                    <h4>Vechicle Name</h4>
+                    <input type="text" class="form-control">
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="form-group">
+                    <h4>Number Plate</h4>
+                    <input type="text" class="form-control">
+                </div><br>
+                <div class="form-group">
+                    <h4>Phone Number</h4>
+                    <input type="number" class="form-control">
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="form-group">
+                    <h4>Email</h4>
+                    <input type="email" class="form-control">
+                </div><br><br><br>
+                <button class="btn btn-info btn-lg">Register</button>
+            </form>
+        </div>
+    </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="jumbotron" id="pass">
+            <h3>Passenger</h3>
+            <form action="" class="form-inline">
+                <div class="form-group">
+                    <h4>Name/Username</h4>
+                    <input type="text" class="form-control">
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="form-group">
+                    <h4>Current Location</h4>
+                    <input type="text" class="form-control">
+                </div><br>
+                <div class="form-group">
+                    <h4>Your Destination</h4>
+                    <input type="text" class="form-control">
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="form-group">
+                    <h4>Vechicle Name</h4>
+                    <input type="text" class="form-control">
+                </div><br>
+                <div class="form-group">
+                    <h4>Phone Number</h4>
+                    <input type="number" class="form-control">
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="form-group">
+                    <h4>Email</h4>
+                    <input type="email" class="form-control">
+                </div><br><br><br>
+                <button class="btn btn-info btn-lg">Book</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="jumbotron" id="online">
+        <h2>Online Vechicle</h2>
+        <table class="table">
+            <tr>
+                <th>Vechicle Name</th>
+                <th>Route</th>
+                <th>Current Location</th>
+            </tr>
+            <tr>
+                <td>Sajha Yatayat</td>
+                <td>Kalanki-Chabhil</td>
+                <td><span class="glyphicon glyphicon-map-marker"></span>
+                    Putalisadak&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn btn-primary btn-sm">Book</a>
+                </td>
+            </tr>
+            <tr>
+                <td>City Nepal</td>
+                <td>Maitidevi-Boudha</td>
+                <td> <span class="glyphicon glyphicon-map-marker"></span>Mitrapark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="btn btn-primary btn-sm">Book</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Sandhya Yatayat</td>
+                <td>Thankot-Jorpati</td>
+                <td><span class="glyphicon glyphicon-map-marker"></span>
+                   Jaibageshowri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn btn-primary btn-sm">Book</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Kantipur Bus</td>
+                <td>Koteshowor-Sangha</td>
+                <td><span class="glyphicon glyphicon-map-marker"></span>Lokanthali&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn btn-primary btn-sm">Book</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
